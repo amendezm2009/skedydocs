@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Skedy</title>
+    <style>
+        :root {
+            --primary: #2563EB;
+            --primary-dark: #1D4ED8;
+            --primary-light: #EFF6FF;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --bg-body: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+            --success: #059669;
+            --warning-bg: #FFFBEB;
+            --warning-border: #FCD34D;
+            --warning-text: #92400E;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            padding: 40px 32px;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 18px;
+            }
+        }
+
+        .header {
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .badge {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background-color: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .badge-success {
+            background-color: #ECFDF5;
+            color: var(--success);
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            color: #0F172A;
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .callout {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 24px 0;
+            font-size: 0.95rem;
+            color: #1E3A8A;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-bg);
+            border-left-color: var(--warning-border);
+            color: var(--warning-text);
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #0F172A;
+            margin: 32px 0 12px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #F1F5F9;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: #334155;
+            margin: 18px 0 8px 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: #334155;
+            font-size: 0.96rem;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 16px;
+            padding-left: 24px;
+            color: #334155;
+        }
+
+        li {
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+
+        .perm-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .perm-card {
+            background: #F8FAFC;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 14px 16px;
+        }
+
+        .perm-name {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.92rem;
+            margin-bottom: 4px;
+        }
+
+        .perm-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .contact-box {
+            background: #F8FAFC;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 32px;
+            text-align: center;
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Política de Privacidad de Skedy</h1>
+            <div class="meta-info">
+                <strong>Última actualización:</strong> 16 de septiembre de 2026 | <strong>Responsable:</strong> Armando Méndez
+                Morales
+            </div>
+        </div>
+
+        <div class="callout">
+            <strong>Principio Rector de Privacidad por Diseño (Local-First):</strong><br>
+            Skedy opera bajo una arquitectura <em>Local-First</em>. Tus horarios, materias, avatares, contactos y notas
+            se almacenan de manera local y aislada en la base de datos de tu propio dispositivo. <strong>No
+                comercializamos, no transferimos ni vendemos tu información personal a terceros ni a redes
+                publicitarias.</strong>
+        </div>
+
+        <h2>1. Identidad y Domicilio del Responsable</h2>
+        <p>
+            En cumplimiento con la <strong>Ley Federal de Protección de Datos Personales en Posesión de los Particulares
+                (LFPDPPP)</strong> de los Estados Unidos Mexicanos, su Reglamento y las directrices de seguridad de
+            datos de <strong>Google Play Console</strong>, se informa que <strong>Armando Méndez Morales</strong> (en
+            adelante el "Responsable"), con correo electrónico de contacto oficial <a
+                href="mailto:amendezm2009@gmail.com">amendezm2009@gmail.com</a>, es el titular y desarrollador de la
+            aplicación móvil <strong>Skedy</strong>.
+        </p>
+
+        <h2>2. Datos Personales que se Tratan</h2>
+        <p>Skedy trata exclusivamente los datos necesarios para brindar las funciones de gestión y comparación de
+            horarios académicos y actividades personales:</p>
+        <ul>
+            <li><strong>Datos de perfil:</strong> Nombre o alias del docente/estudiante y fotografía o avatar
+                seleccionado por el usuario.</li>
+            <li><strong>Datos académicos y de agenda:</strong> Nombres de materias o actividades, códigos de grupo,
+                horarios (días, horas de inicio y fin) y carga horaria semanal.</li>
+            <li><strong>Documentos de origen:</strong> Fotografías de horarios escolares, archivos de imagen (.png,
+                .jpg), hojas de cálculo (.xlsx) o documentos (.pdf) seleccionados voluntariamente para la importación.
+            </li>
+            <li><strong>Preferencias del sistema:</strong> Nivel de volumen para locución/pronunciación por voz, preferencia de respeto
+                al modo silencioso del sistema operativo y estado de notificaciones de clases.</li>
+        </ul>
+
+        <h2>3. Finalidades del Tratamiento</h2>
+        <h3>Finalidades Primarias (Estrictamente necesarias para el servicio):</h3>
+        <ol>
+            <li>Organizar, visualizar y editar horarios escolares y actividades en una cuadrícula semanal interactiva.
+            </li>
+            <li>Detectar y alertar sobre empalmes de materias o cruces de horas.</li>
+            <li>Calcular el número total de horas acumuladas por periodo escolar o docente.</li>
+            <li>Comparar agendas y disponibilidad libre con otros horarios o contactos registrados en la app.</li>
+            <li>Enviar recordatorios locales (notificaciones) previos al inicio de la siguiente clase.</li>
+            <li>Emitir la locución/pronunciación en voz alta mediante síntesis de texto a voz (TTS) del aviso de tu próxima clase al pulsar una
+                notificación o al solicitarlo.</li>
+            <li>Digitalizar y extraer automáticamente materias y horas desde imágenes o documentos mediante algoritmos y
+                modelos de Inteligencia Artificial.</li>
+        </ol>
+        <p><strong>Finalidades Secundarias:</strong> Skedy <u>NO posee finalidades secundarias</u>. No se realizan
+            perfiles publicitarios, seguimiento de hábitos de navegación ni venta de bases de datos.</p>
+
+        <h2>4. Permisos del Dispositivo y su Justificación</h2>
+        <p>Skedy solicita únicamente los permisos indispensables para ejecutar las funciones solicitadas expresamente
+            por el usuario:</p>
+
+        <div class="perm-grid">
+            <div class="perm-card">
+                <div class="perm-name">Cámara (android.permission.CAMERA)</div>
+                <p class="perm-desc">Se utiliza exclusivamente cuando el usuario elige "Tomar Foto" para capturar la
+                    imagen de un horario impreso o tomar una foto de perfil. La captura se procesa en el dispositivo y
+                    no se transmite a terceros sin tu instrucción.</p>
+            </div>
+            <div class="perm-card">
+                <div class="perm-name">Galería y Archivos (Almacenamiento / DocumentPicker)</div>
+                <p class="perm-desc">Permite al usuario seleccionar un archivo existente (.pdf, .xlsx, .jpg, .png) para
+                    extraer su horario o elegir un avatar. Skedy no escanea ni accede a archivos ajenos a los
+                    seleccionados explícitamente.</p>
+            </div>
+            <div class="perm-card">
+                <div class="perm-name">Notificaciones y Alarmas Exactas (POST_NOTIFICATIONS, SCHEDULE_EXACT_ALARM)</div>
+                <p class="perm-desc">Requeridos para programar y mostrar en la barra de estado el recordatorio puntual
+                    de tu próxima clase con antelación.</p>
+            </div>
+            <div class="perm-card">
+                <div class="perm-name">Vibración y Audio (VIBRATE, Volumen / TTS)</div>
+                <p class="perm-desc">Permiten acompañar las alertas con vibración y reproducir la locución/pronunciación
+                    sintetizada
+                    respetando el volumen configurado por el usuario.</p>
+            </div>
+        </div>
+
+        <h2>5. Tratamiento Transparente y Ético de Inteligencia Artificial</h2>
+        <div class="callout callout-warning">
+            <strong>Aviso sobre Procesamiento con IA y Supervisión Humana (Human-in-the-Loop):</strong><br>
+            La digitalización de horarios opera bajo un modelo híbrido: el procesamiento <strong>se procesa
+                preferentemente de forma local</strong> en el dispositivo del usuario mediante OCR integrado. Cuando la
+            complejidad, iluminación, tipografía o estructura tabular del documento lo requiere, el archivo se transmite
+            de forma cifrada (HTTPS) y efímera a los servicios de inferencia de Inteligencia Artificial en la nube
+            (<strong>Google Gemini</strong>) con el exclusivo propósito de extraer y organizar los horarios, sin
+            almacenarse en servidores web ni utilizarse para entrenar modelos públicos.<br><br>
+            Asimismo, se resguarda una copia del archivo procesado exclusivamente en el almacenamiento local privado del
+            dispositivo para que el propio usuario pueda cotejarlo con la información extraída y consultarlo en el
+            momento que lo requiera a través del visor interactivo con zoom. Cuando el usuario lo decida, podrá eliminar
+            el archivo y toda la información extraída y personalizada, garantizando que no se guarda esta información en
+            ningún servidor externo ni página web. Debido a que los modelos probabilísticos pueden presentar
+            discrepancias, el usuario asume la responsabilidad de verificar y validar la información antes de guardarla.
+        </div>
+
+        <h2>6. Almacenamiento, Resguardo y Seguridad</h2>
+        <p>
+            Todos los registros, bases de datos y copias de archivos de origen (PDF, imágenes o libros de cálculo) se
+            alojan localmente de forma privada en el almacenamiento seguro aislado (<em>sandbox</em>) asignado por el
+            sistema operativo del dispositivo a Skedy. No se almacena esta información en servidores externos, nubes
+            centralizadas ni páginas web.
+        </p>
+        <p>
+            La aplicación tiene desactivada la extracción por respaldos no cifrados en la nube de terceros
+            (<code>allowBackup: false</code>), garantizando que tu información se mantenga exclusivamente bajo tu
+            control directo en tu teléfono y pueda ser destruida de forma definitiva cuando decidas eliminar tus
+            horarios.
+        </p>
+
+        <h2>7. Ejercicio de Derechos ARCO (Acceso, Rectificación, Cancelación y Oposición)</h2>
+        <p>
+            Conforme a la LFPDPPP, tienes derecho en todo momento a Acceder, Rectificar, Cancelar u Oponerte al
+            tratamiento de tus datos personales:
+        </p>
+        <ul>
+            <li><strong>Acceso y Rectificación:</strong> Puedes consultar y modificar directamente cualquier materia,
+                profesor, grupo, hora o perfil desde la interfaz de la aplicación.</li>
+            <li><strong>Cancelación y Borrado Total:</strong> Puedes eliminar cualquier horario individualmente o
+                desinstalar la app, lo cual destruye de inmediato el 100% de la base de datos local de tu teléfono sin
+                dejar copias en la nube.</li>
+            <li><strong>Atención Directa:</strong> Para cualquier consulta sobre privacidad o el ejercicio de tus
+                derechos ARCO, puedes escribir al correo <a
+                    href="mailto:amendezm2009@gmail.com">amendezm2009@gmail.com</a> indicando tu solicitud.</li>
+        </ul>
+
+        <h2>8. Transferencia de Datos</h2>
+        <p>
+            El Responsable no efectúa transferencias de tus datos personales a empresas de publicidad, intermediarios
+            financieros, socios comerciales ni autoridades, salvo en los casos estrictamente previstos y ordenados por
+            mandato judicial conforme a las leyes aplicables.
+        </p>
+
+        <h2>9. Modificaciones a la Política de Privacidad</h2>
+        <p>
+            Esta Política de Privacidad puede actualizarse para reflejar nuevas características o normativas legales.
+            Cualquier cambio sustancial se notificará a través de la propia aplicación móvil en las notas de
+            actualización y en el apartado de configuración.
+        </p>
+
+        <div class="contact-box">
+            <h3>¿Tienes dudas o comentarios sobre tu privacidad?</h3>
+            <p>Estamos comprometidos con la transparencia, la seguridad y la soberanía de tus datos.</p>
+            <p>Contacto del Desarrollador: <a href="mailto:amendezm2009@gmail.com">amendezm2009@gmail.com</a></p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 8px;">Skedy · Tu tiempo y el de los
+                tuyos · México, 2026</p>
+        </div>
+
+        <div class="footer">
+            © 2026 Skedy. Desarrollado por Armando Méndez Morales. Todos los derechos reservados.
+        </div>
+    </div>
+
+</body>
+
+</html>

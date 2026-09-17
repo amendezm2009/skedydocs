@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos de Servicio | Skedy</title>
+    <style>
+        :root {
+            --primary: #2563EB;
+            --primary-dark: #1D4ED8;
+            --primary-light: #EFF6FF;
+            --text-main: #1E293B;
+            --text-muted: #64748B;
+            --bg-body: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+            --success: #059669;
+            --warning-bg: #FFFBEB;
+            --warning-border: #FCD34D;
+            --warning-text: #92400E;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            padding: 40px 32px;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 18px;
+            }
+        }
+
+        .header {
+            border-bottom: 2px solid var(--primary-light);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .badge-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .badge {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background-color: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .badge-law {
+            background-color: #F1F5F9;
+            color: #334155;
+            border: 1px solid #CBD5E1;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            color: #0F172A;
+            margin-bottom: 8px;
+            font-weight: 800;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .callout {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 12px 12px 0;
+            margin: 24px 0;
+            font-size: 0.95rem;
+            color: #1E3A8A;
+        }
+
+        .callout-warning {
+            background-color: var(--warning-bg);
+            border-left-color: var(--warning-border);
+            color: var(--warning-text);
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #0F172A;
+            margin: 32px 0 12px 0;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #F1F5F9;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            color: #334155;
+            margin: 18px 0 8px 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: #334155;
+            font-size: 0.96rem;
+        }
+
+        ul,
+        ol {
+            margin-bottom: 16px;
+            padding-left: 24px;
+            color: #334155;
+        }
+
+        li {
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+
+        .contact-box {
+            background: #F8FAFC;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 32px;
+            text-align: center;
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="badge-row">
+                <span class="badge">Condiciones de Servicio</span>
+                <span class="badge badge-law">Legislación Mexicana</span>
+                <span class="badge">Documento Vigente</span>
+            </div>
+            <h1>Términos de Servicio de Skedy</h1>
+            <div class="meta-info">
+                <strong>Última actualización:</strong> 16 de septiembre de 2026 | <strong>Titular y Desarrollador:</strong>
+                Armando Méndez Morales
+            </div>
+        </div>
+
+        <div class="callout">
+            <strong>Resumen de Aceptación:</strong><br>
+            Al descargar, instalar o utilizar la aplicación móvil <strong>Skedy</strong>, aceptas quedar plenamente
+            vinculado por estos Términos de Servicio. Si no estás de acuerdo con alguna de las cláusulas o condiciones
+            aquí establecidas, te solicitamos no utilizar la aplicación ni sus servicios asociados.
+        </div>
+
+        <h2>1. Descripción de la Aplicación y Funcionalidades Vigentes</h2>
+        <p>
+            <strong>Skedy</strong> es una plataforma de software móvil de vanguardia, diseñada para la digitalización
+            integral, organización inteligente, análisis comparativo de agendas y monitoreo temporal de horarios
+            escolares, docentes y personales. Las funcionalidades actualmente operativas en la aplicación comprenden:
+        </p>
+        <ul>
+            <li><strong>Digitalización Híbrida Multi-Fuente:</strong> Extracción de horarios a partir de fotografías
+                tomadas con la cámara integrada (in-app), imágenes importadas desde la galería, archivos de documentos
+                PDF vectoriales y hojas de cálculo electrónicas de Microsoft Excel (.xlsx), combinando procesamiento OCR
+                local en el dispositivo (ML Kit) con motores de inferencia en la nube asistidos por Inteligencia
+                Artificial (Google Gemini).</li>
+            <li><strong>Visor de Cotejo con Zoom Interactivo:</strong> Visor integrado del documento o imagen original
+                vinculado al horario, dotado de controles táctiles de pellizco (pinch-to-zoom), paneo libre y reducción
+                de zoom hasta el 30%, permitiendo una auditoría y verificación visual inmediata contra la fuente
+                original.</li>
+            <li><strong>Gestión de Cargas Académicas (Personal vs. Contactos):</strong> Soporte para perfiles de
+                estudiantes y docentes (con cómputo automático de horas de clase y Carga Horaria total). Permite
+                catalogar horarios como propios ("Personales", que activan la línea de tiempo principal, notificaciones
+                y locución/pronunciación por voz) o de terceros ("Contactos/Grupos", para consulta y comparación).</li>
+            <li><strong>Versionado Temporal y Fechas de Aplicación:</strong> Asignación de periodos (cuatrimestres o
+                semestres) y fechas efectivas de aplicación a cada carga horaria, facilitando la transición ordenada
+                entre ciclos escolares sin sobrescribir ni eliminar el historial académico previo.</li>
+            <li><strong>Línea de Tiempo Diaria y Monitor en Vivo (Live Time):</strong> Interfaz interactiva en la
+                pantalla principal que resalta las clases cursadas, la clase actualmente en progreso con temporizador en
+                vivo y tiempo restante, y las actividades subsecuentes del día.</li>
+            <li><strong>Comparador de Disponibilidad Multi-Agenda (Schedule Comparator):</strong> Herramienta analítica
+                con tres modalidades sincronizadas:
+                <ul style="margin-top: 6px;">
+                    <li><em>Radar Temporal (Por Hora):</em> Selector interactivo minuto a minuto que calcula
+                        instantáneamente el índice de disponibilidad y los estados de cada persona.</li>
+                    <li><em>Columnas Paralelas (Por Día):</em> Visualización simultánea de múltiples agendas lado a lado
+                        sobre una cuadrícula horaria unificada, con soporte de zoom fluido y paneo táctil.</li>
+                    <li><em>Mapa de Calor y Smart Matcher (Por Semana):</em> Matriz semanal de intensidades estilo
+                        When2Meet con ranking algorítmico automatizado de los mejores intervalos libres compartidos para
+                        reuniones o tutorías.</li>
+                </ul>
+            </li>
+            <li><strong>Personalización y Edición Avanzada:</strong> Editor de materias con paleta cromática armónica de
+                alta luminancia (diseñada para garantizar contraste accesible con texto oscuro), reubicación de bloques
+                de clase mediante modo mover/intercambiar, y selector/generador de avatares fotográficos con IA (Imagen
+                3 / DiceBear) o encuadre de recorte no destructivo.</li>
+            <li><strong>Recordatorios Locales y Síntesis de Voz (TTS):</strong> Emisión de alertas programadas con
+                antelación a cada clase, caducidad automática de notificaciones para evitar la saturación de la bandeja
+                del sistema, y locución/pronunciación por voz con calibración independiente de volumen y respeto opcional al modo
+                silencioso del sistema operativo.</li>
+        </ul>
+
+        <h2>2. Licencia de Uso y Restricciones</h2>
+        <p>
+            El titular y desarrollador, <strong>Armando Méndez Morales</strong>, concede al usuario final una licencia
+            personal, no exclusiva, intransferible, revocable y libre de regalías para descargar, instalar y utilizar
+            Skedy exclusivamente para fines personales, educativos u organizativos.
+        </p>
+        <p>
+            Queda expresamente prohibido al usuario:
+        </p>
+        <ul>
+            <li>Descompilar, desensamblar, aplicar ingeniería inversa o intentar descifrar el código fuente, la lógica
+                interna o los algoritmos propietarios de la aplicación.</li>
+            <li>Sublicenciar, alquilar, arrendar, revender, distribuir comercialmente o explotar económicamente la
+                aplicación o cualquiera de sus módulos sin la previa autorización por escrito del titular.</li>
+            <li>Utilizar el software para finalidades ilícitas, fraudulentas, difamatorias o que atenten contra los
+                derechos de privacidad o propiedad de terceras personas.</li>
+        </ul>
+
+        <h2>3. Propiedad Intelectual y Derechos de Autor</h2>
+        <p>
+            Todos los derechos de propiedad intelectual y derechos de autor sobre el código fuente, diseño visual,
+            experiencia de usuario (UX/UI), logotipos, isotipos, elementos distintivos, iconografía, base de datos y
+            algoritmos de Skedy son de la exclusiva titularidad de <strong>Armando Méndez Morales</strong>. Dichos
+            derechos se encuentran plenamente amparados por la Ley Federal del Derecho de Autor de los Estados Unidos
+            Mexicanos, la Ley Federal de Protección a la Propiedad Industrial y los tratados internacionales de la
+            materia (Convenio de Berna y OMPI).
+        </p>
+
+        <h2>4. Digitalización Asistida por OCR e IA (Supervisión Humana Obligatoria)</h2>
+        <div class="callout callout-warning">
+            <strong>⚠️ Descargo de Responsabilidad sobre la Digitalización y Extracción Automatizada:</strong><br>
+            Los módulos de extracción documental de Skedy emplean tecnologías de Reconocimiento Óptico de Caracteres
+            (OCR local en dispositivo) y modelos de Inteligencia Artificial generativa en la nube (Google Gemini). El
+            usuario reconoce y acepta de manera expresa que:
+            <ul style="margin-top: 8px; margin-bottom: 4px;">
+                <li><strong>Procesamiento Local y Derivación a la Nube:</strong> El análisis del archivo o imagen
+                    <strong>se procesa preferentemente de forma local</strong> en el propio dispositivo. Cuando la
+                    complejidad, formato, calidad o estructura del documento lo requiera, el archivo se transmitirá de
+                    forma efímera y cifrada vía HTTPS al servicio de inferencia en la nube de Google Gemini,
+                    exclusivamente para estructurar y extraer los datos del horario, sin almacenamiento en servidores
+                    web ni uso para entrenamiento de modelos públicos.</li>
+                <li><strong>Resguardo Local para Cotejo y Eliminación Definitiva:</strong> Se conserva una copia del
+                    archivo o imagen procesada exclusivamente en el almacenamiento local privado de la app en el
+                    dispositivo del usuario para que pueda cotejarlo y auditarlo visualmente en cualquier momento
+                    mediante el visor con zoom interactivo. Dicha información no se almacena en ningún servidor remoto
+                    ni página web. El usuario tiene el control absoluto para eliminar la carga académica y su archivo
+                    fuente cuando lo decida, produciéndose su destrucción definitiva e irreversible.</li>
+                <li><strong>Naturaleza Probabilística:</strong> Los algoritmos de inferencia son probabilísticos y su
+                    precisión depende de factores externos como iluminación, resolución, arrugas en papel impreso,
+                    nitidez, inclinación o estilos tipográficos complejos.</li>
+                <li><strong>Obligación Indelegable de Verificación:</strong> El usuario asume la total responsabilidad
+                    de corroborar, mediante la previsualización y el visor con zoom integrado, que los nombres de
+                    materias, profesores, grupos, días y rangos horarios concuerden fielmente con su horario oficial
+                    antes de guardar la información.</li>
+                <li><strong>Exención por Datos No Validados:</strong> El desarrollador no asume responsabilidad alguna
+                    por faltas de asistencia, retardos, inasistencias a evaluaciones académicas o penalizaciones
+                    institucionales ocasionadas por datos digitalizados erróneos que no hayan sido validados por el
+                    usuario.</li>
+            </ul>
+        </div>
+
+        <h2>5. Funcionamiento del Comparador de Disponibilidad (Smart Matcher)</h2>
+        <p>
+            Las herramientas de Radar Temporal, Columnas Comparativas y Mapa de Calor calculan coincidencias e
+            intervalos libres mutuos basándose estrictamente en los horarios que el usuario haya registrado en su base
+            de datos local para cada persona o contacto:
+        </p>
+        <ul>
+            <li>Dichas sugerencias representan estimaciones teóricas y no constituyen una garantía de presencia o
+                disponibilidad física en tiempo real de terceros en el mundo real.</li>
+            <li>El usuario es el único responsable de coordinar y confirmar la disponibilidad efectiva de sus contactos
+                para cualquier reunión, estudio en equipo o asesoría académica.</li>
+        </ul>
+
+        <h2>6. Notificaciones Locales, Caducidad y Síntesis de Voz (TTS)</h2>
+        <p>
+            Skedy emite recordatorios locales programados directamente en el sistema operativo del dispositivo móvil
+            (habitualmente 5 minutos antes del inicio de la sesión lectiva). Al respecto:
+        </p>
+        <ul>
+            <li><strong>Gestión de Energía del Dispositivo:</strong> La entrega exacta y puntual de las notificaciones
+                puede verse condicionada por las políticas de ahorro de batería, optimización de recursos (Doze Mode) o
+                restricciones de segundo plano impuestas por los fabricantes de dispositivos Android. El usuario debe
+                conceder los permisos de alarmas exactas y deshabilitar las optimizaciones agresivas de batería si desea
+                máxima precisión en los avisos.</li>
+            <li><strong>Expiración Automática:</strong> Los recordatorios locales están programados para expirar y
+                cancelarse automáticamente una vez concluida la ventana de inicio de la clase, evitando acumulación
+                innecesaria de avisos caducados en el panel de notificaciones.</li>
+            <li><strong>Locución/Pronunciación por Voz y Modo Silencioso:</strong> La locución/pronunciación por voz generada
+                artificialmente adapta su lectura dependiendo de si la actividad corresponde a una carga docente
+                o estudiantil. Si el usuario activa la opción de "Respetar modo silencioso del SO", la voz
+                no se emitirá cuando el teléfono se encuentre en modo Silencio, Vibración o No Molestar.</li>
+        </ul>
+
+        <h2>7. Generación de Avatares y Tratamiento de Imágenes</h2>
+        <p>
+            Para la personalización de perfiles, Skedy permite capturar fotografías mediante la cámara integrada,
+            recortar imágenes de la galería o generar avatares ilustrados con modelos de Inteligencia Artificial:
+        </p>
+        <ul>
+            <li>Los avatares generados o recortados se almacenan exclusivamente en el directorio privado protegido de la
+                aplicación dentro del dispositivo.</li>
+            <li>El usuario se compromete a no utilizar descripciones (prompts) ni cargar imágenes de contenido ofensivo,
+                violento, pornográfico o que infrinjan derechos de imagen o propiedad de terceros al utilizar los
+                servicios de generación de avatares.</li>
+        </ul>
+
+        <h2>8. Arquitectura Local-First y Responsabilidad de Respaldo</h2>
+        <p>
+            Skedy opera bajo una estricta arquitectura orientada a la privacidad local (Local-First), almacenando la
+            totalidad de horarios, clases, avatares y preferencias en bases de datos SQLite dentro del entorno protegido
+            (sandbox) de la aplicación en el teléfono:
+        </p>
+        <ul>
+            <li>El desarrollador titular no opera servidores centrales que almacenen copias de tus agendas académicas,
+                documentos fuente ni mantiene respaldos remotos de tu información en páginas web.</li>
+            <li><strong>Resguardo de Archivos Fuente y Soberanía de Borrado:</strong> Las copias de los documentos de
+                origen (imágenes, PDF o Excel) se resguardan únicamente en el almacenamiento local privado de la app en
+                el dispositivo del usuario para permitir su consulta y cotejo en el visor interactivo con zoom. Cuando
+                el usuario decide eliminar un horario o carga académica, tanto el archivo local como todas las materias
+                e información personalizada asociada son eliminados de forma definitiva e irrecuperable.</li>
+            <li>Si el usuario desinstala la aplicación, restablece los valores de fábrica de su equipo o elimina
+                manualmente los datos de almacenamiento desde la configuración del sistema operativo, la información se
+                eliminará de manera definitiva e irreversible sin posibilidad de recuperación por parte del
+                desarrollador.</li>
+        </ul>
+
+        <h2>9. Exclusión de Garantías y Limitación de Responsabilidad</h2>
+        <p>
+            La aplicación se suministra "tal cual" (<em>as is</em>) y "conforme esté disponible", sin garantías
+            explícitas o tácitas sobre su operatividad ininterrumpida o ausencia total de fallas. En el mayor grado
+            permitido por la legislación mexicana vigente:
+        </p>
+        <ul>
+            <li>El desarrollador no garantiza que la aplicación sea permanentemente compatible con futuras
+                modificaciones o versiones personalizadas del sistema operativo de terceros fabricantes.</li>
+            <li>En ningún caso Armando Méndez Morales responderá por daños indirectos, consecuenciales, punitivos, lucro
+                cesante o pérdidas derivadas del uso, imposibilidad de uso o dependencia sobre las alertas y cálculos de
+                la aplicación.</li>
+        </ul>
+
+        <h2>10. Modificaciones a los Términos y a la Aplicación</h2>
+        <p>
+            El titular se reserva la potestad de actualizar, modificar, agregar o suprimir características de la
+            aplicación en cualquier momento para optimizar la seguridad, incorporar nuevas herramientas o cumplir con
+            los requerimientos técnicos de las tiendas de distribución (Google Play Store). La versión vigente de los
+            Términos de Servicio estará permanentemente disponible para su consulta dentro de la propia aplicación y en
+            los canales oficiales de distribución.
+        </p>
+
+        <h2>11. Legislación Aplicable, Jurisdicción y Contacto</h2>
+        <p>
+            Los presentes Términos se rigen e interpretan con base en las <strong>leyes de los Estados Unidos
+                Mexicanos</strong>. Ante cualquier controversia, conflicto o reclamación emanada de la utilización de
+            Skedy, las partes renuncian expresamente a cualquier otro fuero que por razón de domicilio pudiera
+            corresponderles y se someten a la jurisdicción de los tribunales competentes en México.
+        </p>
+
+        <div class="contact-box">
+            <h3>Contacto y Atención al Usuario</h3>
+            <p>Para consultas, aclaraciones, dudas sobre estos Términos o reporte de incidencias técnicas en Skedy,
+                puedes comunicarte directamente con el desarrollador titular en:</p>
+            <p><a href="mailto:amendezm2009@gmail.com">amendezm2009@gmail.com</a></p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 8px;">Skedy · Armando Méndez Morales ·
+                México, 2026</p>
+        </div>
+
+        <div class="footer">
+            © 2026 Skedy. Todos los derechos reservados. Desarrollado por Armando Méndez Morales.
+        </div>
+    </div>
+
+</body>
+
+</html>
